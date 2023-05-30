@@ -3,7 +3,8 @@
 
 #include <SD.h>
 #include <M5Unified.h>
-/// need ESP8266Audio library.(https://github.com/earlephilhower/ESP8266Audio/)
+
+// ESP8266Audioライブラリ(https://github.com/earlephilhower/ESP8266Audio/)
 #include <AudioFileSourceSD.h>
 #include <AudioFileSourceID3.h>
 #include <AudioGeneratorMP3.h>
@@ -13,11 +14,13 @@
 #define PIN_SD_SCK 23
 #define PIN_SD_MISO 33
 #define PIN_SD_MOSI 19
+
+// PIRシグナルピン
 #define PIN_PIR_SIGNAL 32
 
 // ファイル関係
-#define FILEPATH_MUSIC "/file.mp3"
-#define FILEPATH_LOG "/log.csv"
+#define FILEPATH_MUSIC "/file.mp3" // 再生する音楽ファイル
+#define FILEPATH_LOG "/log.csv"    // ログファイル
 
 // 音声再生関連
 static AudioFileSourceSD file;
@@ -90,12 +93,12 @@ void setup(void)
   SPI.begin(PIN_SD_SCK, PIN_SD_MISO, PIN_SD_MOSI, -1);
   while (false == SD.begin(-1, SPI, 25000000))
   {
-    // 初期化に失敗した場合低い音を1秒間隔で鳴らす
+    // 初期化に失敗した場合低い音を1秒間隔で鳴らす(確認用)
     M5.Speaker.tone(300, 200);
     delay(1000);
   }
 
-  // 初期化に成功した場合高い音を短く鳴らす
+  // 初期化に成功した場合高い音を短く鳴らす(確認用)
   M5.Speaker.tone(1000, 200);
   delay(200);
 }
