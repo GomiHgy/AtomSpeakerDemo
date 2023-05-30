@@ -24,7 +24,7 @@ M5Stack社の[Atom SPK](https://docs.m5stack.com/en/atom/atom_spk)に接続さ�
 
 ## カスタマイズ
 
-デフォルトのソースコードでは音声ファイル及びログファイルをdefine定義しています。
+デフォルトのソースコードでは音声ファイル及びログファイルをdefine定義しています。  
 ファイル名を変更する場合はmain.cppの下記内容を変更してください。
 
 ```
@@ -32,3 +32,10 @@ M5Stack社の[Atom SPK](https://docs.m5stack.com/en/atom/atom_spk)に接続さ�
 #define FILEPATH_MUSIC "/file.mp3" // 再生する音楽ファイル
 #define FILEPATH_LOG "/log.csv" // ログファイル
 ```
+
+## UIFlow版
+
+![image](https://github.com/GomiHgy/M5YobikomiKun/assets/10735253/a0df0800-a4a4-45c6-a822-00b9f5b7d54d)
+
+uiflowディレクトリ内にUIFlow用プログラムが入っています。  
+UIFlow Version 1.11.8現在、Atom SPKはwavファイルしか再生出来ないため、file.wavを再生するようにしています。
