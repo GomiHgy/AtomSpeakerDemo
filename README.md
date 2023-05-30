@@ -1,5 +1,7 @@
 # M5呼び込みくん
 
+![349271429_1104366760519824_6152396647276172695_n](https://github.com/GomiHgy/M5YobikomiKun/assets/10735253/16450f71-5be4-43a9-822f-c14f0289b462)
+
 M5Stack社の[Atom SPK](https://docs.m5stack.com/en/atom/atom_spk)に接続された[PIR Unit](https://docs.m5stack.com/ja/unit/pir)が人を発見した際、microSDカード内のログファイルに書き込みを行い、音声再生を行います。
 
 ## 開発・検証環境
