@@ -25,6 +25,12 @@ Atom SPKに接続された[PIR Unit](https://docs.m5stack.com/ja/unit/pir)が人
 - microSDカード
 - レゴテクニックピン
 
+**注意！**
+
+![PXL_20230526_052801254](https://github.com/GomiHgy/M5YobikomiKun/assets/10735253/7011ff0b-14b0-4ebf-9864-9316c18ac657)
+
+スピーカーがステレオプラグの場合は、ステレオミニ (メス) ⇒モノラルミニ (オス) 変換プラグを噛ませることをおすすめします。
+
 ## カスタマイズ
 
 デフォルトのソースコードでは音声ファイル及びログファイルをdefine定義しています。  
